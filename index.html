@@ -154,7 +154,8 @@ footer span{opacity:.9}
 .brand{display:grid;gap:3px}
 .brand .tagline{font-family:var(--display);font-size:.66rem;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);white-space:nowrap}
 .brand .tagline b{color:var(--teal);font-weight:800;font-size:1.3em;line-height:1}
-.menu-btn{display:none;font-family:var(--display);font-weight:600;font-size:.95rem;background:var(--teal);color:var(--teal-ink);border:0;border-radius:8px;padding:9px 14px;cursor:pointer}
+.menu-btn svg{display:block}
+.menu-btn{display:none;background:none;color:var(--teal);border:0;border-radius:8px;padding:8px;cursor:pointer;line-height:0}
 .menu-btn:focus-visible{outline:3px solid var(--sand);outline-offset:2px}
 nav a.give{background:var(--sand-bright);color:var(--sand-ink)}
 .hero{background:radial-gradient(circle at 90% 10%,color-mix(in srgb,var(--sage) 35%,transparent) 0,transparent 40%),linear-gradient(140deg,var(--teal) 0%,var(--teal-deep) 100%)}
@@ -179,7 +180,7 @@ nav a.give{background:var(--sand-bright);color:var(--sand-ink)}
 .value{position:relative;border:1px solid var(--line);border-top:6px solid var(--c);border-radius:12px;padding:22px 20px 22px;gap:10px;box-shadow:0 6px 18px rgba(15,94,99,.08)}
 .value .badge{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--c);color:#fff;font-family:var(--display);font-weight:700;font-size:1.5rem}
 .value h3{font-size:1.25rem;color:var(--c)}
-.v-c{--c:var(--teal-deep)} .v-a{--c:var(--teal)} .v-r{--c:var(--teal-mid)} .v-e{--c:var(--sage-deep)}
+.v-c{--c:#073a3d} .v-a{--c:#0d5257} .v-r{--c:#1d6b6b} .v-e{--c:#36817b}
 .closing{padding-top:28px}
 .eyebrow{color:var(--teal)}
 .eyebrow::before{background:var(--sand);height:3px;width:28px}
@@ -266,7 +267,7 @@ footer a,.give-box a{color:inherit}
 <header>
   <div class="wrap">
     <a class="brand" href="#home" aria-label="Better CARE Lab, home"><img class="logo logo-light" src="logo-header-color.svg" alt="Better CARE Lab" width="574" height="81"><img class="logo logo-dark" src="logo-header-white.svg" alt="" width="574" height="81"><span class="tagline"><b>C</b>ompassion &middot; <b>A</b>ccess &middot; <b>R</b>espect &middot; <b>E</b>vidence</span></a>
-    <button type="button" class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="main-nav">Menu</button>
+    <button type="button" class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="main-nav" aria-label="Menu"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></button>
     <nav aria-label="Main" id="main-nav">
       <a href="#home">Home</a>
       <a href="#about">About</a>
